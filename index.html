@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Personal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedorMenu ancho">
+      <div class="logoMenu">
+        <figure>
+          <img src="imagenes/logo.svg" alt="">
+        </figure>
+        <div class="menuSandwich">
+          <i class="fa-solid fa-bars" id="iconoMenu"></i>
+        </div>
+      </div>
+      <nav class="menu" id="cajaMenu">
+        <ul>
+          <li><a href="#sobreMi">Sobre Mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <div class="infoPersonal ancho">
+      <h1 class="centrar">Aarón Carvajal</h1>
+      <div class="contenidoHeader">
+        <div class="contenedorTexto">
+          <div class="textoBotones">
+            <div class="iconoTextos"><i class="fa-solid fa-angle-right azul"></i></div>
+            <p>Apasionado por la tecnología, transformo ideas en productos que resuelven, conectan y dejan huella.</p>
+          </div>
+          <div class="botones">
+            <a href="#contacto" class="boton btn1">Contáctame</a>
+            <a href="#proyectos" class="boton btn2">Ver Proyectos</a>
+          </div>
+        </div>
+        <div class="imagenHeader">
+          <figure>
+            <img src="imagenes/foto_personal.png" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="sobreMi" id="sobreMi">
+    <div class="contenedorSobreMi ancho">
+      <div class="imagenSobreMi">
+        <div class="marco"></div>
+        <figure>
+          <img src="imagenes/imagen_sobreMi.png" alt="">
+        </figure>
+      </div>
+      <div class="textoSobreMi">
+        <div class="titulo">
+          <h2><i class="fa-solid fa-angle-right azul"></i> Sobre <span class="azul">Mí</span></h2>
+          <hr class="lineaAzul">
+        </div>
+        <p class="descripcion">Apasionado por el desarrollo de software y la creación de soluciones digitales con experiencia en desarrollo web y móvil, siempre en busca de aprender y afrontar nuevos retos.</p>
+        <div class="datos">
+          <p class="dato datoEdad"><span class="grueso">Edad:</span> 22 años.</p>
+          <p class="dato datoMail"><span class="grueso">Mail:</span> carvajalaaron44@gmail.com</p>
+          <p class="dato datoCiudad"><span class="grueso">Ciudad:</span> Mérida.</p>
+          <p class="dato datoTelefono"><span class="grueso">Teléfono:</span> +52 9994178034</p>
+        </div>
+        <a href="documentos/CV_CarvajalAaron.pdf" class="boton btn3">Descargar CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <div class="ancho">
+      <div class="tituloSeccion centrar">
+        <div class="titulo">
+          <h2><i class="fa-solid fa-angle-right azul"></i> Servicios</h2>
+          <hr class="lineaAzul">
+        </div>
+        <p>Ofrezco soluciones de diseño y desarrollo adaptadas a las necesidades de cada proyecto.</p>
+      </div>
+      <div class="contenedorServicios">
+        <article class="tarjeta">
+          <div class="cabeceraServicio">
+            <h3>Diseño Web</h3>
+            <figure>
+              <img src="imagenes/diseno-web-pincel.svg" alt="">
+            </figure>
+          </div>
+          <p>Diseño la estructura y apariencia de sitios web, pensando en cómo se ve y cómo se usa.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="cabeceraServicio">
+            <h3>Diseño UX/UI</h3>
+            <figure>
+              <img src="imagenes/diseno-ux-ui.svg" alt="">
+            </figure>
+          </div>
+          <p>Planeo la experiencia de usuario e interfaces claras, antes de pasar al desarrollo.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="cabeceraServicio">
+            <h3>Bases de Datos</h3>
+            <figure>
+              <img src="imagenes/bases-de-datos.svg" alt="">
+            </figure>
+          </div>
+          <p>Diseño y gestiono bases de datos para que la información fluya sin problemas.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="cabeceraServicio">
+            <h3>Apps Móviles</h3>
+            <figure>
+              <img src="imagenes/apps-moviles.svg" alt="">
+            </figure>
+          </div>
+          <p>Desarrollo aplicaciones móviles multiplataforma, listas para Android.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="cabeceraServicio">
+            <h3>Desarrollo Web</h3>
+            <figure>
+              <img src="imagenes/desarrollo-web.svg" alt="">
+            </figure>
+          </div>
+          <p>Construyo sitios y plataformas web funcionales, del backend al frontend.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="cabeceraServicio">
+            <h3>Identidad de Marca</h3>
+            <figure>
+              <img src="imagenes/diseno-web.svg" alt="">
+            </figure>
+          </div>
+          <p>Creo identidades visuales coherentes, atractivas y memorables para cada marca.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades" id="habilidades">
+    <div class="ancho">
+      <div class="tituloSeccion centrar">
+        <div class="titulo">
+          <h2><i class="fa-solid fa-angle-right azul"></i> Mis <span class="azul">Habilidades</span></h2>
+          <hr class="lineaAzul">
+        </div>
+        <p>Herramientas y tecnologías que utilizo para diseñar, desarrollar y crear soluciones digitales.</p>
+      </div>
+      <div class="listaHabilidades">
+        <figure class="habilidad">
+          <img src="imagenes/html5.svg" alt="">
+          <figcaption>HTML</figcaption>
+        </figure>
+        <figure class="habilidad">
+          <img src="imagenes/css3.svg" alt="">
+          <figcaption>CSS</figcaption>
+        </figure>
+        <figure class="habilidad">
+          <img src="imagenes/javascript.svg" alt="">
+          <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure class="habilidad extra">
+          <img src="imagenes/phpmyadmin.svg" alt="">
+          <figcaption>phpMyAdmin</figcaption>
+        </figure>
+        <figure class="habilidad extra">
+          <img src="imagenes/illustrator.svg" alt="">
+          <figcaption>Illustrator</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacion" id="educacion">
+    <div class="textoFormacion">
+      <div class="titulo">
+        <h2><i class="fa-solid fa-angle-right azul"></i> Formación Académica</h2>
+        <hr class="lineaAzul">
+      </div>
+      <figure class="logoTec">
+        <img src="imagenes/logo_TEC.svg" alt="">
+      </figure>
+      <p>Estudios en Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Mérida (TecNM). Mi formación me ha dado bases sólidas en programación, bases de datos y desarrollo de software, junto con habilidades de análisis y trabajo en equipo para afrontar retos profesionales.</p>
+    </div>
+    <div class="imagenFormacion"></div>
+  </section>
+
+  <section class="experiencia" id="experiencia">
+    <div class="ancho">
+      <div class="tituloSeccion centrar">
+        <div class="titulo">
+          <h2><i class="fa-solid fa-angle-right azul"></i> Experiencia</h2>
+          <hr class="lineaAzul">
+        </div>
+        <p>Conoce las capacidades y áreas que forman parte de mi perfil profesional.</p>
+      </div>
+      <div class="listaExperiencia">
+        <div class="cajaExperiencia">
+          <article class="tarjetaExperiencia">
+            <figure>
+              <img src="imagenes/soluciones_digitales.webp" alt="">
+            </figure>
+            <h3>Soluciones Digitales</h3>
+            <p>Desarrollo de soluciones digitales mediante diferentes tecnologías, combinando programación, diseño y funcionalidad para crear proyectos adaptados a distintas necesidades.</p>
+          </article>
+          <a href="#casaMayab" class="boton btn3">Ver más</a>
+        </div>
+        <div class="cajaExperiencia">
+          <article class="tarjetaExperiencia">
+            <figure>
+              <img src="imagenes/trabajo_en_equipo.webp" alt="">
+            </figure>
+            <h3>Trabajo en Equipo</h3>
+            <p>Colaboración en proyectos mediante comunicación, organización y distribución de responsabilidades, trabajando de manera coordinada para alcanzar objetivos en conjunto.</p>
+          </article>
+          <a href="#medAlert" class="boton btn3">Ver más</a>
+        </div>
+        <div class="cajaExperiencia">
+          <article class="tarjetaExperiencia">
+            <figure>
+              <img src="imagenes/innovacion_funcional.webp" alt="">
+            </figure>
+            <h3>Innovación Funcional</h3>
+            <p>Creación de propuestas que combinan creatividad, funcionalidad y compromiso, buscando transformar ideas en soluciones útiles, atractivas y con valor para cada proyecto.</p>
+          </article>
+          <a href="#valor" class="boton btn3">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proyectos" id="proyectos">
+    <div class="contenedorProyectos ancho">
+      <div class="tituloSeccion centrar">
+        <div class="titulo">
+          <h2><i class="fa-solid fa-angle-right azul"></i> Mis <span class="azul">Proyectos</span></h2>
+          <hr class="lineaAzul">
+        </div>
+        <p>Explora algunos de los proyectos que he diseñado y desarrollado, combinando creatividad, funcionalidad y tecnología para crear soluciones digitales.</p>
+      </div>
+      <div class="listaPosters">
+        <div class="proyecto" id="casaMayab">
+          <a href="https://github.com/aaroncarv777/Proyecto_CasaMayab" target="_blank" class="poster">
+            <img src="imagenes/poster_casa_mayab.png" class="imagenAncha" alt="">
+            <div class="sombra">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <p>Ver Proyecto</p>
+            </div>
+          </a>
+          <a href="https://github.com/aaroncarv777/Proyecto_CasaMayab" target="_blank" class="boton btn1 btnProyecto">Ver Proyecto</a>
+        </div>
+
+        <div id="medAlert"></div>
+        <div class="postersDesktop">
+          <div class="proyecto">
+            <a href="https://github.com/aaroncarv777/Proyecto_MedAlert" target="_blank" class="poster">
+              <img src="imagenes/poster_medalert.png" class="imagenAncha" alt="">
+              <div class="sombra">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <p>Ver Proyecto</p>
+              </div>
+            </a>
+            <a href="https://github.com/aaroncarv777/Proyecto_MedAlert" target="_blank" class="boton btn1 btnProyecto">Ver Proyecto</a>
+          </div>
+          <div class="proyecto">
+            <a href="https://github.com/aaroncarv777/Proyecto_SkillSwap" target="_blank" class="poster posterSkillswap">
+              <img src="imagenes/poster_skillswap.png" class="imagenAncha" alt="">
+              <div class="sombra">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <p>Ver Proyecto</p>
+              </div>
+            </a>
+            <a href="https://github.com/aaroncarv777/Proyecto_SkillSwap" target="_blank" class="boton btn1 btnProyecto">Ver Proyecto</a>
+          </div>
+        </div>
+
+        <div class="postersTablet">
+          <div class="filaVertical">
+            <div class="proyectoVertical">
+              <a href="https://github.com/aaroncarv777/Proyecto_MedAlert" target="_blank" class="poster">
+                <img src="imagenes/poster_tablet.webp" class="imagenVertical" alt="">
+              </a>
+              <a href="https://github.com/aaroncarv777/Proyecto_MedAlert" target="_blank" class="boton btn1 btnProyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyectoVertical">
+              <a href="https://github.com/aaroncarv777/Proyecto_SkillSwap" target="_blank" class="poster">
+                <img src="imagenes/poster_tablet2.webp" class="imagenVertical" alt="">
+              </a>
+              <a href="https://github.com/aaroncarv777/Proyecto_SkillSwap" target="_blank" class="boton btn1 btnProyecto">Ver Proyecto</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="valor" id="valor">
+    <div class="textoValor">
+      <div class="contenidoValor">
+        <div class="tituloValor">
+          <div class="titulo">
+            <h2><i class="fa-solid fa-angle-right azul"></i> ¿Cómo puedo aportar valor en cada <span class="azul">proyecto</span>?</h2>
+            <hr class="lineaAzul">
+          </div>
+        </div>
+        <article class="punto">
+          <h3><i class="fa-regular fa-circle-check azul"></i> Creatividad</h3>
+          <p>Convierto ideas en propuestas visuales atractivas y con personalidad, buscando que cada proyecto tenga una identidad única.</p>
+        </article>
+        <article class="punto">
+          <h3><i class="fa-regular fa-circle-check azul"></i> Funcionalidad</h3>
+          <p>Creo soluciones digitales que no solo se ven bien, sino que también son intuitivas, fáciles de usar y adaptadas a las necesidades del usuario.</p>
+        </article>
+        <article class="punto">
+          <h3><i class="fa-regular fa-circle-check azul"></i> Compromiso</h3>
+          <p>Me enfoco en cada proyecto con atención y dedicación, buscando entregar resultados de calidad que cumplan con sus objetivos y necesidades.</p>
+        </article>
+      </div>
+    </div>
+    <div class="imagenValor"></div>
+  </section>
+
+  <section class="contactoRapido" id="contacto">
+    <div class="mediosContacto ancho">
+      <a href="tel:+529994178034" class="medio">
+        <i class="fa-solid fa-phone"></i>
+        <p>Teléfono</p>
+      </a>
+      <a href="mailto:carvajalaaron44@gmail.com" class="medio">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Email</p>
+      </a>
+      <a href="https://wa.me/529994178034" class="medio medioUltimo">
+        <i class="fa-brands fa-whatsapp"></i>
+        <p>WhatsApp</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="seccionForm">
+    <div class="ancho centrar">
+      <div class="titulo">
+        <h2><i class="fa-solid fa-angle-right azul"></i> Envíame tu <span class="azul">mensaje</span></h2>
+        <hr class="lineaAzul">
+      </div>
+      <p class="textoForm">Si tienes alguna pregunta, no dudes en escribirme un mensaje usando el formulario de contacto que aparece a continuación.</p>
+      <form class="formulario">
+        <div class="camposForm">
+          <div class="campo campoNombre">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" class="entrada" placeholder="Tu Nombre">
+          </div>
+          <div class="campo campoEmail">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" class="entrada" placeholder="Tu Email">
+          </div>
+          <div class="campo campoTelefono">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" class="entrada" placeholder="Tu Teléfono">
+          </div>
+          <div class="campo campoMensaje">
+            <i class="fa-solid fa-message"></i>
+            <input type="text" class="entrada" placeholder="Tu Mensaje">
+          </div>
+        </div>
+        <div class="contenedorEnviar">
+          <button type="submit" class="boton btn2">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <div class="contenedorPie ancho">
+      <figure>
+        <img src="imagenes/logo-dark.svg" alt="">
+      </figure>
+      <div class="redes">
+        <a href="https://www.instagram.com/carvajal_aaron04/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/aaron.carvajal.184" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/aaroncarv777" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/aarón-alexander-carvajal-córdova-83255832b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $("#iconoMenu").click(function () {
+      $("#cajaMenu").slideToggle();
+    });
+  </script>
+</body>
+</html>
